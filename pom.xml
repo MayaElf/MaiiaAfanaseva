@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example</groupId>
+    <groupId>ru.training.at</groupId>
     <artifactId>HW1</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -12,37 +12,41 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
 
-        <maven-surefire-plugin.suiteXmlFile>${project.maven-surefire-plugin.suiteXmlPath}/SumAndSubtractTestsSuite.xml</maven-surefire-plugin.suiteXmlFile>
-        <project.maven-surefire-plugin.suiteXmlPath>${project.build.testOutputDirectory}/resourceTestConfig</project.maven-surefire-plugin.suiteXmlPath>
+        <maven-surefire-plugin.suiteXmlFile>${project.maven-surefire-plugin.suiteXmlPath}/TestSuite.xml</maven-surefire-plugin.suiteXmlFile>
+        <project.maven-surefire-plugin.suiteXmlPath>${project.build.testOutputDirectory}/resourceTestConfig/</project.maven-surefire-plugin.suiteXmlPath>
     </properties>
 
     <dependencies>
         <dependency>
-            <groupId>ru.training.at</groupId>
-            <artifactId>calculator</artifactId>
-            <version>1.0</version>
-            <scope>system</scope>
-            <systemPath>${basedir}/src/main/resources/calculator-1.0.jar</systemPath>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>4.0.0-beta-4</version>
         </dependency>
+
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>4.4.3</version>
+            <scope>test</scope>
+        </dependency>
+
 
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
             <version>3.12.0</version>
-            <!--  default scope is compile  -->
+
         </dependency>
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>6.14.3</version>
             <scope>test</scope>
-            <!--  this way we can exclude transitive dependencies,
-              testng has junit in dependencies, but we don't want it in project  -->
+
             <exclusions>
                 <exclusion>
                     <groupId>junit</groupId>
                     <artifactId>junit</artifactId>
-                    <!--  pay attention, we put only groupId and artifactId, but not version  -->
                 </exclusion>
             </exclusions>
         </dependency>
@@ -69,7 +73,6 @@
                 </dependencies>
                 <configuration>
                     <configLocation>
-                        <!--  pay attention to use exact url for checkstyle plugin ruleset  -->
                         https://raw.githubusercontent.com/DmitryKhodakovsky/epam-training-center-code-checkers-configurations/main/checkstyle/checkstyle.xml
                     </configLocation>
                     <includeTestSourceDirectory>true</includeTestSourceDirectory>
@@ -91,12 +94,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
-                    <!--  encoding tag is omitted because it's default value is
-                    ${project.build.source.encoding} which is already defined in properties section  -->
                     <source>1.8</source>
                     <target>1.8</target>
-                    <!--  source and target configs can be set in properties section (in same way as encoding) using
-                    ${maven.compiler.source} and ${maven.compiler.target} properties correspondingly -->
                 </configuration>
             </plugin>
             <plugin>
@@ -113,17 +112,6 @@
     </build>
 
     <profiles>
-        <profile>
-            <id>multiplyAndDivideOperationTestsSuite</id>
-            <properties>
-                <testng.suite.file>${project.maven-surefire-plugin.suiteXmlPath}/MultiplyAndDivideOperationTestsSuite.xml</testng.suite.file>
-            </properties>
-        </profile>
-        <profile>
-            <id>allTestsSuite</id>
-            <properties>
-                <testng.suite.file>${project.maven-surefire-plugin.suiteXmlPath}/AllTestsSuite.xml</testng.suite.file>
-            </properties>
-        </profile>
+
     </profiles>
 </project>
