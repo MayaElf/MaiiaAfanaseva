@@ -23,6 +23,8 @@ public class Exercise2Tests {
                 .setup();
     }
 
+    private final String url = "https://jdi-testing.github.io/jdi-light/index.html ";
+
     private WebDriver webDriver;
     private final int ten = 10;
 
@@ -40,7 +42,7 @@ public class Exercise2Tests {
         //1. Open test site by URL
         webDriver
                 .navigate()
-                .to("https://jdi-testing.github.io/jdi-light/index.html ");
+                .to(url);
         //2. Assert Browser title
         Assert.assertEquals(webDriver
                 .getTitle(), "Home Page");
@@ -83,22 +85,26 @@ public class Exercise2Tests {
         webDriver.findElement(By.xpath("//div[@class='colors']/select/option[contains(., 'Yellow')]")).click();
 
         //9. Assert checkbox, radio, dropdown name and its status are corresponding to selected
-        WebElement waterLog = webDriver.findElement(By.xpath("//ul[@class='panel-body-list logs']/li[4]"));
+        WebElement waterLog = webDriver.findElement(By.xpath("//ul[@class='panel-body-list logs']"
+                + "/li[contains(., 'Water')]"));
         Assert.assertTrue(waterLog.getText().contains("Water"));
         Assert.assertTrue(webDriver.findElement(By.xpath("//label[@class='label-checkbox' "
                 + "and contains(., 'Water')]/input")).isSelected());
 
-        WebElement windLog = webDriver.findElement(By.xpath("//ul[@class='panel-body-list logs']/li[3]"));
+        WebElement windLog = webDriver.findElement(By.xpath("//ul[@class='panel-body-list logs']"
+                + "/li[contains(., 'Wind')]"));
         Assert.assertTrue(windLog.getText().contains("Wind"));
         Assert.assertTrue(webDriver.findElement(By.xpath("//label[@class='label-checkbox' "
                 + "and contains(., 'Wind')]/input")).isSelected());
 
-        WebElement selenLog = webDriver.findElement(By.xpath("//ul[@class='panel-body-list logs']/li[2]"));
+        WebElement selenLog = webDriver.findElement(By.xpath("//ul[@class='panel-body-list logs']"
+                + "/li[contains(., 'Selen')]"));
         Assert.assertTrue(selenLog.getText().contains("Selen"));
         Assert.assertTrue(webDriver.findElement(By.xpath("//label[@class='label-radio' "
                 + "and contains(., 'Selen')]/input")).isSelected());
 
-        WebElement yellowLog = webDriver.findElement(By.xpath("//ul[@class='panel-body-list logs']/li[1]"));
+        WebElement yellowLog = webDriver.findElement(By.xpath("//ul[@class='panel-body-list logs']"
+                + "/li[contains(., 'Yellow')]"));
         Select yellow = new Select(webDriver.findElement(By.xpath("//div[@class='colors']/select")));
         Assert.assertTrue(yellowLog.getText().contains(yellow.getFirstSelectedOption().getText()));
 

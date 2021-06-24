@@ -1,6 +1,8 @@
 package ru.training.at.hw2.ex1;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import java.sql.Array;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
@@ -16,6 +18,8 @@ import org.testng.annotations.Test;
 public class Exercise1Tests {
 
     private WebDriver webDriver;
+
+    private final String url = "https://jdi-testing.github.io/jdi-light/index.html ";
 
     private final String listXPath = "//ul[@class='uui"
             + "-navigation nav navbar-nav m-l8']/li/a";
@@ -71,7 +75,7 @@ public class Exercise1Tests {
         //1. Open test site by URL
         webDriver
                 .navigate()
-                .to("https://jdi-testing.github.io/jdi-light/index.html ");
+                .to(url);
         //2. Assert Browser title
         Assert.assertEquals(webDriver
                 .getTitle(), "Home Page");
@@ -125,15 +129,15 @@ public class Exercise1Tests {
                 .findElements(By
                         .className("benefit-txt"));
         Assert.assertEquals(four, txtElementList.size());
+        List<String> actualTxtElements = new ArrayList<>();
         for (WebElement element : txtElementList) {
             Assert.assertTrue(element.isDisplayed());
         }
-        for (int i = 0; i < txtElementList.size(); i++) {
-            Assert
-                    .assertEquals(txtElementList
-                            .get(i)
-                            .getText(), expectedTxtIcon[i]);
+        for (WebElement element : txtElementList) {
+            actualTxtElements.add(element.getText());
         }
+        Assert.assertEquals(actualTxtElements.toArray(), expectedTxtIcon);
+
         //8. Assert that frame with "Frame button" exist
         Assert.assertEquals(webDriver
                 .findElement(By.id("frame"))
@@ -156,11 +160,11 @@ public class Exercise1Tests {
         List<WebElement> leftElement = webDriver
                 .findElements(By.xpath(leftElementXpath));
         Assert.assertEquals(leftElement.size(), five);
-        for (int i = 0; i < leftElement.size(); i++) {
-            Assert.assertEquals(leftElement
-                    .get(i).getText(), leftString[i]);
+        List<String> actualLeftElements = new ArrayList<>();
+        for (WebElement element : leftElement) {
+            actualLeftElements.add(element.getText());
         }
-
+        Assert.assertEquals(actualLeftElements.toArray(), leftString);
         //12. Close Browser
         webDriver.close();
         if (webDriver != null) {
