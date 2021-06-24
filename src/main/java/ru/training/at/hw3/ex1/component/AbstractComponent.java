@@ -1,4 +1,4 @@
-package ru.training.at.hw2.ex1;
+package ru.training.at.hw3.ex1.component;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;

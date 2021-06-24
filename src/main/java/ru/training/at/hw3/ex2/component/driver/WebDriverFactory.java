@@ -1,4 +1,4 @@
-package ru.training.at.hw2.ex1.driver;
+package ru.training.at.hw3.ex2.component.driver;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

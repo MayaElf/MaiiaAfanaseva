@@ -1,4 +1,4 @@
-package ru.training.at.hw2.ex1.driver;
+package ru.training.at.hw3.ex1.component.driver;
 
 import java.util.Objects;
 import org.openqa.selenium.WebDriver;
