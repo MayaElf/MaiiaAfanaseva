@@ -2,8 +2,9 @@
 <suite name="testSuite">
     <test name="test">
         <packages>
-            <package name="ru.training.at.hw3.ex1"/>
-            <package name="ru.training.at.hw3.ex2"/>
+
+            <package name="ru.training.at.hw4.ex2"/>
+
         </packages>
     </test>
 </suite>
