@@ -142,12 +142,12 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>${maven.compiler.version}</version>
+                <version>3.8.1</version>
                 <configuration>
                     <!--  encoding tag is omitted because it's default value is
                     ${project.build.source.encoding} which is already defined in properties section  -->
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
+                    <source>11</source>
+                    <target>11</target>
                     <!--  source and target configs can be set in properties section (in same way as encoding) using
                     ${maven.compiler.source} and ${maven.compiler.target} properties correspondingly -->
                 </configuration>
