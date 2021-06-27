@@ -23,7 +23,7 @@ public class Exercise2Tests extends AbstractBaseSeleniumTest {
     }
 
     @Test(dataProvider = "dataProviders")
-    public void pageTesting(String title, String username, String password, String name) {
+    public void pageTesting(String title, String username, String password, String name) throws InterruptedException {
 
         IndexPage indexPage = new IndexPage(driver);
         //1. "Open test site by URL"
@@ -53,6 +53,8 @@ public class Exercise2Tests extends AbstractBaseSeleniumTest {
 
         //9. Assert checkbox, radio, dropdown name and its status are corresponding to selected
         assertionStep.getWaterWindSelenYellowSelected();
+
+
     }
 
 }
