@@ -2,6 +2,7 @@ package ru.training.at.hw3.ex2;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import ru.training.at.hw3.ex1.AbstractBaseSeleniumTest;
 import ru.training.at.hw3.ex2.page.IndexPage;
 
 public class Exercise2Tests extends AbstractBaseSeleniumTest {
@@ -10,7 +11,7 @@ public class Exercise2Tests extends AbstractBaseSeleniumTest {
     public void openPage() {
         IndexPage indexPage = new IndexPage(driver);
         // 1. Open test site by URL
-        indexPage.open();
+        indexPage.open("");
         // 2. Assert Browser title
         Assert.assertEquals(indexPage.getTitles(), indexPage.getNameOfTitle());
         // 3. Perform login

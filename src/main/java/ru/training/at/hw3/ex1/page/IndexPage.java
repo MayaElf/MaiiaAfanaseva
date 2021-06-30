@@ -13,31 +13,18 @@ public class IndexPage extends AbstractBasePage {
     public IndexPage(WebDriver driver) {
         super(driver);
         this.webDriver = driver;
-        expectedHeadersList.add("HOME");
-        expectedHeadersList.add("CONTACT FORM");
-        expectedHeadersList.add("SERVICE");
-        expectedHeadersList.add("METALS & COLORS");
-
-        expectedTxtIcon.add("To include good practices\nand ideas from successful\nEPAM project");
-        expectedTxtIcon.add("To be flexible and\ncustomizable");
-        expectedTxtIcon.add("To be multiplatform");
-        expectedTxtIcon.add("Already have good base\n(about 20"
-                + " internal and\nsome external projects),\nwish to get more…");
-        expectedLeftElements.add("Home");
-        expectedLeftElements.add("Contact form");
-        expectedLeftElements.add("Service");
-        expectedLeftElements.add("Metals & Colors");
-        expectedLeftElements.add("Elements packs");
-
     }
 
-    public void open() {
-        open("");
-    }
-
-    private static final List<String> expectedHeadersList = new ArrayList<String>();
-    private static final List<String> expectedTxtIcon = new ArrayList<String>();
-    private static final List<String> expectedLeftElements = new ArrayList<>();
+    private static final List<String> expectedHeadersList = List.of("HOME",
+            "CONTACT FORM", "SERVICE", "METALS & COLORS");
+    private static final List<String> expectedTxtIcon = List.of("To include good "
+                    + "practices\nand ideas from successful\nEPAM project",
+            "To be flexible and\ncustomizable",
+            "To be multiplatform",
+            "Already have good base\n(about 20"
+                    + " internal and\nsome external projects),\nwish to get more…");
+    private static final List<String> expectedLeftElements = List.of("Home",
+            "Contact form", "Service", "Metals & Colors", "Elements packs");
 
     @FindBy(id = "user-icon")
     private WebElement openButton;

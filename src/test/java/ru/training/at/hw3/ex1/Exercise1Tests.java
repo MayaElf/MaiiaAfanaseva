@@ -11,11 +11,12 @@ public class Exercise1Tests extends AbstractBaseSeleniumTest {
     private final int five = 5;
 
 
+
     @Test(description = "Тестирование")
     public void openPage() {
         IndexPage indexPage = new IndexPage(driver);
         // 1. Open test site by URL
-        indexPage.open();
+        indexPage.open("");
         // 2. Assert Browser title
         Assert.assertEquals(indexPage.getTitles(), indexPage.getNameOfTitle());
         // 3. Perform login

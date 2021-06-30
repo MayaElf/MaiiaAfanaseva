@@ -3,14 +3,14 @@ package ru.training.at.hw3.ex1.component;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
+import ru.training.at.hw3.ex1.component.driver.WebDriverSingleton;
 
 public abstract class AbstractComponent {
-    protected WebDriver driver;
-    protected WebDriverWait wait;
+    public WebDriver driver;
+    public WebDriverWait wait;
 
-    protected AbstractComponent(WebDriver driver) {
-        this.driver = driver;
+    public AbstractComponent(WebDriver driver) {
+        this.driver = new WebDriverSingleton().getDriver();
         wait = new WebDriverWait(driver, 10);
         PageFactory.initElements(driver, this);
     }

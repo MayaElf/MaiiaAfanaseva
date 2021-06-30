@@ -1,23 +1,15 @@
 package ru.training.at.hw3.ex2.page;
 
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 import ru.training.at.hw3.ex1.component.AbstractBasePage;
 
-
-
-
 public class IndexPage extends AbstractBasePage {
     public IndexPage(WebDriver driver) {
         super(driver);
         this.webDriver = driver;
-    }
-
-    public void open() {
-        open("");
     }
 
     @FindBy(id = "user-icon")
