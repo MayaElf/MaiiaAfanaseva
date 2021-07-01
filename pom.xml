@@ -199,6 +199,7 @@
             <properties>
                 <testng.suite.file>${project.maven-surefire-plugin.suiteXmlPath}/TestSuite.xml</testng.suite.file>
             </properties>
+
         </profile>
     </profiles>
 
