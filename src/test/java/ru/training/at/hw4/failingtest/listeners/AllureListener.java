@@ -47,6 +47,8 @@ public class AllureListener implements ITestListener {
     public void onTestFailure(ITestResult result) {
         WebDriver driver = (WebDriver) result.getTestContext().getAttribute("driver");
         attachScreenShot(driver);
+        driver.close();
+        driver.quit();
     }
 
 

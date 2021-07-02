@@ -53,7 +53,7 @@ public class Exercise1Tests extends AbstractBaseSeleniumTest {
                          List<String> expectedLeftElements, String expectedUrl) {
         IndexPage indexPage = new IndexPage(driver);
         // 1. Open test site by URL
-        indexPage.open();
+        indexPage.open("");
         // 2. Assert Browser title
         assertionStep.getTitle(title);
         // 3. Perform login

@@ -9,8 +9,9 @@ public class AbstractBasePage extends AbstractComponent {
         super(driver);
     }
 
-    protected void open(String url) {
+    public void open(String url) {
         driver.navigate().to(BASE_URL + url);
     }
 
 }
+

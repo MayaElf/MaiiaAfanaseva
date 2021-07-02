@@ -7,7 +7,7 @@ public class WebDriverSingleton {
 
     private static WebDriver driver;
 
-    private WebDriverSingleton() {}
+    public WebDriverSingleton() { }
 
     public static WebDriver getDriver() {
         String browserName = System.getProperty("browser") == null ? "chrome" : System.getProperty("browser");
@@ -18,7 +18,10 @@ public class WebDriverSingleton {
     }
 
     public static void closeDriver() {
-        driver.quit();
-        driver = null;
+        if (driver != null) {
+            driver.close();
+            driver.quit();
+            driver = null;
+        }
     }
 }

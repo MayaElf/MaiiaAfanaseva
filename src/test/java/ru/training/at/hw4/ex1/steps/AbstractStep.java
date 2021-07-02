@@ -15,6 +15,6 @@ public abstract class AbstractStep {
 
     @Step("Открыть домашнюю страницу")
     public void openIndexPage() {
-        indexPage.open();
+        indexPage.open("");
     }
 }

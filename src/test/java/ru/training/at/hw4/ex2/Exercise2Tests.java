@@ -2,12 +2,10 @@ package ru.training.at.hw4.ex2;
 
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
-import java.util.ArrayList;
-import java.util.List;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-import ru.training.at.hw4.ex2.listeners.AllureListener;
+import ru.training.at.hw4.ex1.listeners.AllureListener;
 import ru.training.at.hw4.ex2.page.IndexPage;
 
 @Listeners({AllureListener.class})
@@ -27,7 +25,7 @@ public class Exercise2Tests extends AbstractBaseSeleniumTest {
 
         IndexPage indexPage = new IndexPage(driver);
         //1. "Open test site by URL"
-        indexPage.open();
+        indexPage.open("");
 
         // 2. Assert Browser title
         assertionStep.getTitle(title);
@@ -58,4 +56,3 @@ public class Exercise2Tests extends AbstractBaseSeleniumTest {
     }
 
 }
-

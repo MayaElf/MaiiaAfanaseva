@@ -8,7 +8,6 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import ru.training.at.hw4.ex1.page.IndexPage;
-import ru.training.at.hw4.failingtest.AbstractBaseSeleniumTest;
 import ru.training.at.hw4.failingtest.listeners.AllureListener;
 
 
@@ -56,7 +55,7 @@ public class FailingTests extends AbstractBaseSeleniumTest {
                          List<String> expectedLeftElements, String expectedUrl) {
         IndexPage indexPage = new IndexPage(driver);
         // 1. Open test site by URL
-        indexPage.open();
+        indexPage.open("");
         // 2. Assert Browser title
         assertionStep.getTitle(title);
         // 3. Perform login
