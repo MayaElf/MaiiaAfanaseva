@@ -10,10 +10,7 @@ import org.testng.annotations.Test;
 import ru.training.at.hw4.ex1.page.IndexPage;
 import ru.training.at.hw4.failingtest.listeners.AllureListener;
 
-
-
 @Listeners({AllureListener.class})
-
 @Feature("Данный класс тестирует 11 шагов Exercise1")
 @Story("Тестируется открытие, логин, переход на другую страницу, заголовки, наличие кнопок")
 public class FailingTests extends AbstractBaseSeleniumTest {
@@ -22,7 +19,7 @@ public class FailingTests extends AbstractBaseSeleniumTest {
     public Object[][] dataProviderss() {
         List<String> expectedHeaders = new ArrayList<>();
         expectedHeaders.add("HOMe");
-        expectedHeaders.add("Contact form");
+        expectedHeaders.add("CONTACT FORM");
         expectedHeaders.add("SERVICE");
         expectedHeaders.add("METALS & COLORS");
 

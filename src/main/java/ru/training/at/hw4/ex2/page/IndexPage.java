@@ -16,10 +16,6 @@ public class IndexPage extends AbstractBasePage {
         this.webDriver = driver;
     }
 
-    public void open() {
-        open("");
-    }
-
     @FindBy(id = "user-icon")
     private WebElement openButton;
     @FindBy(id = "name")
