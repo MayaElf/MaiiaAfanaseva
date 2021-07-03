@@ -33,6 +33,7 @@
 
         <allure-testng.version>2.13.2</allure-testng.version>
         <allure-maven.version>2.10.0</allure-maven.version>
+        <cucumber-testng.version>6.10.4</cucumber-testng.version>
 
     </properties>
 
@@ -104,7 +105,17 @@
             <version>3.7.1</version>
         </dependency>
 
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>${cucumber-testng.version}</version>
+        </dependency>
 
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-testng</artifactId>
+            <version>${cucumber-testng.version}</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -152,7 +163,6 @@
                     ${maven.compiler.source} and ${maven.compiler.target} properties correspondingly -->
                 </configuration>
             </plugin>
-
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
