@@ -11,3 +11,4 @@ Feature: Different Elements Page test
     Then Log rows are displayed and checkbox name and its status are corresponding to selected
     And Log rows are displayed and radio button name and it status is corresponding to selected
     And Log rows are displayed dropdown name and selected value is corresponding to selected
+

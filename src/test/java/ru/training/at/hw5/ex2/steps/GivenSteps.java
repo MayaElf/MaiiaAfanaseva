@@ -1,10 +1,10 @@
-package ru.training.at.hw5.ex1.steps;
-
+package ru.training.at.hw5.ex2.steps;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import java.util.Locale;
 import org.testng.Assert;
+import ru.training.at.hw5.ex1.steps.AbstractStep;
 
 
 public class GivenSteps extends AbstractStep {
@@ -19,18 +19,4 @@ public class GivenSteps extends AbstractStep {
         indexPage.login("Roman", "Jdi1234");
         Assert.assertEquals(indexPage.getRoman(), name.toUpperCase(Locale.ROOT));
     }
-
-    @And("I click on {string} button in Header")
-    public void getLogginedUsername(String name) {
-        indexPage.clickOnService();
-
-    }
-
-    @And("I click on {string} button in Service dropdown")
-    public void changePage(String diffElements) {
-        indexPage.changePage();
-    }
-
 }
-
-

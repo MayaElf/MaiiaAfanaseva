@@ -5,8 +5,6 @@
             <package name="ru.training.at.hw5.ex1"/>
             <package name="ru.training.at.hw5.ex2"/>
             <package name="ru.training.at.hw5.ex3"/>
-
-
         </packages>
     </test>
 </suite>

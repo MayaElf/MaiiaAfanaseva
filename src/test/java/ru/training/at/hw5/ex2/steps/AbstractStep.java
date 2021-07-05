@@ -1,21 +1,16 @@
 package ru.training.at.hw5.ex2.steps;
 
-import io.qameta.allure.Step;
-import org.openqa.selenium.WebDriver;
-import ru.training.at.hw5.ex1.page.IndexPage;
+import ru.training.at.hw5.ex1.component.driver.WebDriverSingleton;
+import ru.training.at.hw5.ex1.hooks.CucumberHooks;
+import ru.training.at.hw5.ex2.page.IndexPage;
 
 
 public abstract class AbstractStep {
 
-    IndexPage indexPage;
+    public IndexPage indexPage;
 
-    protected AbstractStep(WebDriver driver) {
-        indexPage = new IndexPage(driver);
-    }
-
-    @Step("Открыть домашнюю страницу")
-    public void openIndexPage() {
-        indexPage.open("");
+    protected AbstractStep() {
+        indexPage = new IndexPage(WebDriverSingleton.getDriver());
     }
 }
 

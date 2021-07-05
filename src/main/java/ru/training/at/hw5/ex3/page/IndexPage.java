@@ -1,6 +1,7 @@
-package ru.training.at.hw5.ex3;
+package ru.training.at.hw5.ex3.page;
 
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -28,9 +29,9 @@ public class IndexPage extends AbstractBasePage {
     private WebElement dropdownToggle;
     @FindBy(xpath = "//ul[@class='dropdown-menu']/li/a[.='Different elements']")
     private WebElement differentElements;
-    @FindBy(xpath = "//ul[@class='dropdown-menu']/li/a[.='User Table']")
+    @FindBy(xpath = "//ul[@class='dropdown-menu']/li/a[.='User Table ']")
     private WebElement userTable;
-    @FindBy(xpath = "//label[@for='ivan' and contains(., 'Vip')]/input")
+    @FindBy(id = "ivan")
     private WebElement vipForIvanSelected;
     @FindBy(xpath = "//ul[@class='panel-body-list logs']/li[contains(.,'Vip')]")
     private WebElement vipForIvanInLog;
@@ -48,10 +49,10 @@ public class IndexPage extends AbstractBasePage {
         return webDriver.getTitle();
     }
 
-    public void login() {
+    public void login(String name, String password) {
         openButton.click();
-        user.sendKeys("Roman");
-        password.sendKeys("Jdi1234");
+        user.sendKeys(name);
+        this.password.sendKeys(password);
         loginButton.click();
     }
 
@@ -67,8 +68,12 @@ public class IndexPage extends AbstractBasePage {
         return authorityName.getText();
     }
 
-    public void changePage() {
+    public void clickOnService() {
         dropdownToggle.click();
+    }
+
+
+    public void changePage() {
         userTable.click();
     }
 
@@ -76,8 +81,8 @@ public class IndexPage extends AbstractBasePage {
         vipForIvanSelected.click();
     }
 
-    public boolean getVipIvanLog() {
-        return vipForIvanInLog.isDisplayed();
+    public String getVipIvanLog() {
+        return vipForIvanInLog.getText();
     }
 
 }

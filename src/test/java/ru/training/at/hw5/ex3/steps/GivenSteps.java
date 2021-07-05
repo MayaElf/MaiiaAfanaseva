@@ -1,5 +1,4 @@
-package ru.training.at.hw5.ex1.steps;
-
+package ru.training.at.hw5.ex3.steps;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -27,10 +26,8 @@ public class GivenSteps extends AbstractStep {
     }
 
     @And("I click on {string} button in Service dropdown")
-    public void changePage(String diffElements) {
+    public void clickOnUserDetails(String userDetails) {
         indexPage.changePage();
     }
 
 }
-
-

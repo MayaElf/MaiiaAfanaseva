@@ -190,9 +190,14 @@ public class IndexPage extends AbstractBasePage {
     }
 
     public void changePage() {
-        dropdownToggle.click();
         differentElements.click();
     }
+
+    public void clickOnService() {
+        dropdownToggle.click();
+    }
+
+
 
     public void clickWaterWindCheck() {
         waterCheck.click();

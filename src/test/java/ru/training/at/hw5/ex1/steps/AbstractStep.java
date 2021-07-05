@@ -1,7 +1,7 @@
 package ru.training.at.hw5.ex1.steps;
 
-import io.qameta.allure.Step;
-import org.openqa.selenium.WebDriver;
+import ru.training.at.hw5.ex1.component.driver.WebDriverSingleton;
+import ru.training.at.hw5.ex1.hooks.CucumberHooks;
 import ru.training.at.hw5.ex1.page.IndexPage;
 
 
@@ -9,5 +9,7 @@ public abstract class AbstractStep {
 
     public IndexPage indexPage;
 
-
+    protected AbstractStep() {
+        indexPage = new IndexPage(WebDriverSingleton.getDriver());
+    }
 }
