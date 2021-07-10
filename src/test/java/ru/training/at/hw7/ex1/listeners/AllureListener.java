@@ -1,4 +1,4 @@
-package ru.training.at.hw4.ex1.listeners;
+/*package ru.training.at.hw7.ex1.listeners;
 
 import io.qameta.allure.Attachment;
 import org.openqa.selenium.OutputType;
@@ -7,7 +7,6 @@ import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-import org.testng.annotations.Listeners;
 
 public class AllureListener implements ITestListener {
 
@@ -55,5 +54,5 @@ public class AllureListener implements ITestListener {
     private byte[] attachScreenShot(WebDriver driver) {
         return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
     }
-}
+}*/
 

@@ -1,4 +1,4 @@
-package ru.training.at.hw4.ex1.page;
+/*package ru.training.at.hw7.ex1.page;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
-import ru.training.at.hw4.ex1.component.AbstractBasePage;
+import ru.training.at.hw7.ex1.component.AbstractBasePage;
 
 public class IndexPage extends AbstractBasePage {
     public IndexPage(WebDriver driver) {
@@ -244,4 +244,4 @@ public class IndexPage extends AbstractBasePage {
 
 
 
-}
+}*/

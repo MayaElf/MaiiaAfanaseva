@@ -2,10 +2,7 @@
 <suite name="testSuite">
     <test name="test">
         <packages>
-            <package name="ru.training.at.hw4.ex1"/>
-            <package name="ru.training.at.hw4.ex2"/>
-            <package name="ru.training.at.hw4.failingtest"/>
-
+            <package name="ru.training.at.hw7.ex1"/>
 
         </packages>
     </test>

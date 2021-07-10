@@ -1,11 +1,11 @@
-package ru.training.at.hw4.ex2.page;
+/*package ru.training.at.hw7.ex2.page;
 
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
-import ru.training.at.hw4.ex1.component.AbstractBasePage;
+import ru.training.at.hw7.ex1.component.AbstractBasePage;
 
 
 
@@ -140,5 +140,5 @@ public class IndexPage extends AbstractBasePage {
         return yellowInLog.getText().contains(yellow.getFirstSelectedOption().getText());
     }
 
-}
+}*/
 

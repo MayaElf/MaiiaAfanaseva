@@ -1,0 +1,18 @@
+[22:05:32  STEP] Open 'Home Page'(url=https://jdi-testing.github.io/jdi-light/index.html)
+[22:05:33  INFO] Download driver: 'CHROME X32' successfully
+[22:05:33  INFO] Use driver path: C:\Users\Майя\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe
+[22:05:37  INFO] Page 'Home Page' opened
+[22:05:37  STEP] Click on 'User Icon'
+[22:05:38  STEP] Input 'Roman' in 'Name'
+[22:05:38  STEP] Input 'Jdi1234' in 'Password'
+[22:05:38  STEP] Click on 'Login Button'
+[22:05:39  STEP] Click on 'Metal Colors'
+[22:07:56  STEP] Open 'Home Page'(url=https://jdi-testing.github.io/jdi-light/index.html)
+[22:07:57  INFO] Download driver: 'CHROME X32' successfully
+[22:07:57  INFO] Use driver path: C:\Users\Майя\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe
+[22:08:00  INFO] Page 'Home Page' opened
+[22:08:00  STEP] Click on 'User Icon'
+[22:08:01  STEP] Input 'Roman' in 'Name'
+[22:08:01  STEP] Input 'Jdi1234' in 'Password'
+[22:08:01  STEP] Click on 'Login Button'
+[22:08:02  STEP] Click on 'Metal Colors'
