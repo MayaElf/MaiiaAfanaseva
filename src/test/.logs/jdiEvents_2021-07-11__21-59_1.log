@@ -1,0 +1,86 @@
+[21:51:18  STEP] Open 'Home Page'(url=https://jdi-testing.github.io/jdi-light/index.html)
+[21:51:19  INFO] Download driver: 'CHROME X32' successfully
+[21:51:19  INFO] Use driver path: C:\Users\Майя\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe
+[21:51:26  INFO] Page 'Home Page' opened
+[21:51:26  STEP] Check that 'User Name' is hidden
+[21:51:27  INFO] >>> true
+[21:51:27  STEP] Click on 'User Icon'
+[21:51:27  STEP] Input 'Roman' in 'Name'
+[21:51:27  STEP] Input 'Jdi1234' in 'Password'
+[21:51:27  STEP] Click on 'Login Button'
+[21:51:28  STEP] Click on 'Metal Colors'
+[21:51:29  INFO] Page 'Metal And Colors Page' opened
+[21:51:29  STEP] Select '1' in 'Odds'
+[21:51:29  INFO] Page 'Metals And Colors Form' opened
+[21:51:30  STEP] Select '2' in 'Even'
+[21:51:31  STEP] Select 'Water' for 'Elements'
+[21:51:32  STEP] Select 'Fire' for 'Elements'
+[21:51:34  STEP] Select 'Red' in 'Colors'
+[21:51:35  STEP] Select 'Gold' in 'Metals'
+[21:51:37  STEP] Select '3' in 'Vegetables'
+[21:51:38  STEP] Select 'Cucumber' in 'Vegetables'
+[21:51:38  STEP] Click on 'Submit'
+[21:51:39  STEP] Open 'Home Page'(url=https://jdi-testing.github.io/jdi-light/index.html)
+[21:51:39  INFO] Page 'Home Page' opened
+[21:51:39  STEP] Check that 'User Name' is hidden
+[21:51:39  INFO] >>> false
+[21:51:39  STEP] Click on 'Metal Colors'
+[21:51:40  INFO] Page 'Metal And Colors Page' opened
+[21:51:40  STEP] Select '1' in 'Odds'
+[21:51:40  INFO] Page 'Metals And Colors Form' opened
+[21:51:41  STEP] Select '8' in 'Even'
+[21:51:42  STEP] Select 'Earth' for 'Elements'
+[21:51:43  STEP] Select 'Wind' for 'Elements'
+[21:53:07  STEP] Open 'Home Page'(url=https://jdi-testing.github.io/jdi-light/index.html)
+[21:53:07  INFO] Download driver: 'CHROME X32' successfully
+[21:53:07  INFO] Use driver path: C:\Users\Майя\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe
+[21:53:11  INFO] Page 'Home Page' opened
+[21:53:11  STEP] Check that 'User Name' is hidden
+[21:53:11  INFO] >>> true
+[21:53:11  STEP] Click on 'User Icon'
+[21:53:11  STEP] Input 'Roman' in 'Name'
+[21:53:12  STEP] Input 'Jdi1234' in 'Password'
+[21:53:12  STEP] Click on 'Login Button'
+[21:53:12  STEP] Click on 'Metal Colors'
+[21:53:13  INFO] Page 'Metal And Colors Page' opened
+[21:53:13  STEP] Select '1' in 'Odds'
+[21:53:13  INFO] Page 'Metals And Colors Form' opened
+[21:53:14  STEP] Select '2' in 'Even'
+[21:53:15  STEP] Select 'Water' for 'Elements'
+[21:53:16  STEP] Select 'Fire' for 'Elements'
+[21:53:18  STEP] Select 'Red' in 'Colors'
+[21:53:20  STEP] Select 'Gold' in 'Metals'
+[21:53:22  STEP] Select '3' in 'Vegetables'
+[21:53:22  STEP] Select 'Cucumber' in 'Vegetables'
+[21:53:23  STEP] Click on 'Submit'
+[21:53:24  STEP] Open 'Home Page'(url=https://jdi-testing.github.io/jdi-light/index.html)
+[21:53:24  INFO] Page 'Home Page' opened
+[21:53:24  STEP] Check that 'User Name' is hidden
+[21:53:24  INFO] >>> false
+[21:53:24  STEP] Click on 'Metal Colors'
+[21:53:25  INFO] Page 'Metal And Colors Page' opened
+[21:53:25  STEP] Select '1' in 'Odds'
+[21:53:25  INFO] Page 'Metals And Colors Form' opened
+[21:53:26  STEP] Select '8' in 'Even'
+[21:55:50  STEP] Open 'Home Page'(url=https://jdi-testing.github.io/jdi-light/index.html)
+[21:55:51  INFO] Download driver: 'CHROME X32' successfully
+[21:55:51  INFO] Use driver path: C:\Users\Майя\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe
+[21:55:55  INFO] Page 'Home Page' opened
+[21:55:55  STEP] Check that 'User Name' is hidden
+[21:55:56  INFO] >>> true
+[21:55:56  STEP] Click on 'User Icon'
+[21:55:56  STEP] Input 'Roman' in 'Name'
+[21:55:56  STEP] Input 'Jdi1234' in 'Password'
+[21:55:56  STEP] Click on 'Login Button'
+[21:55:57  STEP] Click on 'Metal Colors'
+[21:55:58  INFO] Page 'Metal And Colors Page' opened
+[21:55:58  STEP] Select '1' in 'Odds'
+[21:55:58  INFO] Page 'Metals And Colors Form' opened
+[21:55:59  STEP] Select '2' in 'Even'
+[21:55:59  STEP] Select 'Water' for 'Elements'
+[21:56:00  STEP] Select 'Fire' for 'Elements'
+[21:56:03  STEP] Select 'Red' in 'Colors'
+[21:56:04  STEP] Select 'Gold' in 'Metals'
+[21:56:06  STEP] Select '3' in 'Vegetables'
+[21:56:07  STEP] Select 'Cucumber' in 'Vegetables'
+[21:56:08  STEP] Click on 'Submit'

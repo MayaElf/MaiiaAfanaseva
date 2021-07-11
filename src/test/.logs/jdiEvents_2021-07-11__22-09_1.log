@@ -1,0 +1,110 @@
+[22:01:10  STEP] Open 'Home Page'(url=https://jdi-testing.github.io/jdi-light/index.html)
+[22:01:11  INFO] Download driver: 'CHROME X32' successfully
+[22:01:11  INFO] Use driver path: C:\Users\Майя\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe
+[22:01:16  INFO] Page 'Home Page' opened
+[22:01:16  STEP] Check that 'User Name' is hidden
+[22:01:16  INFO] >>> true
+[22:01:16  STEP] Click on 'User Icon'
+[22:01:16  STEP] Input 'Roman' in 'Name'
+[22:01:16  STEP] Input 'Jdi1234' in 'Password'
+[22:01:17  STEP] Click on 'Login Button'
+[22:01:17  STEP] Click on 'Metal Colors'
+[22:01:19  INFO] Page 'Metal And Colors Page' opened
+[22:01:19  STEP] Select '1' in 'Odds'
+[22:01:19  INFO] Page 'Metals And Colors Form' opened
+[22:01:20  STEP] Select '2' in 'Even'
+[22:01:21  STEP] Select 'Water' for 'Elements'
+[22:01:22  STEP] Select 'Fire' for 'Elements'
+[22:01:24  STEP] Select 'Red' in 'Colors'
+[22:01:25  STEP] Select 'Gold' in 'Metals'
+[22:01:27  STEP] Select '3' in 'Vegetables'
+[22:01:28  STEP] Select 'Cucumber' in 'Vegetables'
+[22:01:29  STEP] Click on 'Submit'
+[22:01:30  STEP] Open 'Home Page'(url=https://jdi-testing.github.io/jdi-light/index.html)
+[22:01:30  INFO] Page 'Home Page' opened
+[22:01:30  STEP] Check that 'User Name' is hidden
+[22:01:30  INFO] >>> false
+[22:01:30  STEP] Click on 'Metal Colors'
+[22:01:31  INFO] Page 'Metal And Colors Page' opened
+[22:01:31  STEP] Select '1' in 'Odds'
+[22:01:31  INFO] Page 'Metals And Colors Form' opened
+[22:01:31  STEP] Select '8' in 'Even'
+[22:01:33  STEP] Select 'Earth' for 'Elements'
+[22:01:34  STEP] Select 'Wind' for 'Elements'
+[22:01:35  STEP] Select 'Green' in 'Colors'
+[22:01:37  STEP] Select 'Silver' in 'Metals'
+[22:01:38  STEP] Select '3' in 'Vegetables'
+[22:01:39  STEP] Select 'Tomato' in 'Vegetables'
+[22:01:39  STEP] Select 'Vegetables' in 'Vegetables'
+[22:01:40  STEP] Click on 'Submit'
+[22:01:40  STEP] Open 'Home Page'(url=https://jdi-testing.github.io/jdi-light/index.html)
+[22:01:41  INFO] Page 'Home Page' opened
+[22:01:41  STEP] Check that 'User Name' is hidden
+[22:09:16  STEP] Open 'Home Page'(url=https://jdi-testing.github.io/jdi-light/index.html)
+[22:09:16  INFO] Download driver: 'CHROME X32' successfully
+[22:09:16  INFO] Use driver path: C:\Users\Майя\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe
+[22:09:20  INFO] Page 'Home Page' opened
+[22:09:20  STEP] Check that 'User Name' is hidden
+[22:09:20  INFO] >>> true
+[22:09:20  STEP] Click on 'User Icon'
+[22:09:21  STEP] Input 'Roman' in 'Name'
+[22:09:21  STEP] Input 'Jdi1234' in 'Password'
+[22:09:21  STEP] Click on 'Login Button'
+[22:09:21  STEP] Click on 'Metal Colors'
+[22:09:22  INFO] Page 'Metal And Colors Page' opened
+[22:09:22  STEP] Select '1' in 'Odds'
+[22:09:22  INFO] Page 'Metals And Colors Form' opened
+[22:09:23  STEP] Select '2' in 'Even'
+[22:09:24  STEP] Select 'Water' for 'Elements'
+[22:09:25  STEP] Select 'Fire' for 'Elements'
+[22:09:27  STEP] Select 'Red' in 'Colors'
+[22:09:29  STEP] Select 'Gold' in 'Metals'
+[22:09:31  STEP] Select '3' in 'Vegetables'
+[22:09:31  STEP] Select 'Cucumber' in 'Vegetables'
+[22:09:32  STEP] Click on 'Submit'
+[22:09:33  STEP] Open 'Home Page'(url=https://jdi-testing.github.io/jdi-light/index.html)
+[22:09:33  INFO] Page 'Home Page' opened
+[22:09:33  STEP] Check that 'User Name' is hidden
+[22:09:33  INFO] >>> false
+[22:09:33  STEP] Click on 'Metal Colors'
+[22:09:34  INFO] Page 'Metal And Colors Page' opened
+[22:09:34  STEP] Select '1' in 'Odds'
+[22:09:34  INFO] Page 'Metals And Colors Form' opened
+[22:09:35  STEP] Select '8' in 'Even'
+[22:09:36  STEP] Select 'Earth' for 'Elements'
+[22:09:37  STEP] Select 'Wind' for 'Elements'
+[22:09:38  STEP] Select 'Green' in 'Colors'
+[22:09:40  STEP] Select 'Silver' in 'Metals'
+[22:09:41  STEP] Select '3' in 'Vegetables'
+[22:09:41  STEP] Select 'Tomato' in 'Vegetables'
+[22:09:42  STEP] Select 'Vegetables' in 'Vegetables'
+[22:09:43  STEP] Click on 'Submit'
+[22:09:43  STEP] Open 'Home Page'(url=https://jdi-testing.github.io/jdi-light/index.html)
+[22:09:43  INFO] Page 'Home Page' opened
+[22:09:43  STEP] Check that 'User Name' is hidden
+[22:09:44  INFO] >>> false
+[22:09:44  STEP] Click on 'Metal Colors'
+[22:09:44  INFO] Page 'Metal And Colors Page' opened
+[22:09:44  STEP] Select '7' in 'Odds'
+[22:09:44  INFO] Page 'Metals And Colors Form' opened
+[22:09:45  STEP] Select '8' in 'Even'
+[22:09:46  STEP] Select 'Earth' for 'Elements'
+[22:09:47  STEP] Select 'Fire' for 'Elements'
+[22:09:49  STEP] Select 'Blue' in 'Colors'
+[22:09:51  STEP] Select 'Bronze' in 'Metals'
+[22:09:52  STEP] Select '3' in 'Vegetables'
+[22:09:53  STEP] Select 'Tomato' in 'Vegetables'
+[22:09:54  STEP] Select 'Vegetables' in 'Vegetables'
+[22:09:54  STEP] Select 'Onion' in 'Vegetables'
+[22:09:55  STEP] Click on 'Submit'
+[22:09:56  STEP] Open 'Home Page'(url=https://jdi-testing.github.io/jdi-light/index.html)
+[22:09:56  INFO] Page 'Home Page' opened
+[22:09:56  STEP] Check that 'User Name' is hidden
+[22:09:56  INFO] >>> false
+[22:09:56  STEP] Click on 'Metal Colors'
+[22:09:56  INFO] Page 'Metal And Colors Page' opened
+[22:09:56  STEP] Select '5' in 'Odds'
+[22:09:56  INFO] Page 'Metals And Colors Form' opened
+[22:09:57  STEP] Select '6' in 'Even'
+[22:09:59  STEP] Select 'Water' for 'Elements'
+[22:09:59  STEP] Select 'Wind' for 'Elements'

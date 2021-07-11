@@ -17,9 +17,7 @@ import org.testng.annotations.Listeners;
 public interface TestsInit {
     @BeforeSuite(alwaysRun = true)
     static void setup() {
-        //WebDriverManager.chromedriver().setup();
         initSite(SiteJdi.class);
-
     }
 
     @AfterSuite(alwaysRun = true)
