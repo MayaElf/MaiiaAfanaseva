@@ -1,0 +1,231 @@
+{
+	"info": {
+		"_postman_id": "804de724-4e83-46ad-b5db-7b9f00c1dac4",
+		"name": "Maiia_Afanasieva_HW9",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateNewCard",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function(){\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time less than 400ms\", function(){\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(4000);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response should contain idBoard tag\", function(){\r",
+							"    pm.response.to.not.be.error;\r",
+							"    pm.response.to.have.jsonBody(\"idBoard\");\r",
+							"});\r",
+							"\r",
+							"var jsondata = JSON.parse(responseBody);\r",
+							"postman.setEnvironmentVariable(\"cardId\", jsondata.id);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"TEST\",\r\n    \"idBoard\": \"60f300ddb915db17bb2726b4\",\r\n    \"idList\": \"60f300ddb915db17bb2726b5\"\r\n    }\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASIC_URL}}/cards/?key={{API_KEY}}&token={{API_TOKEN}}&name=HW9-POSTMAN",
+					"host": [
+						"{{BASIC_URL}}"
+					],
+					"path": [
+						"cards",
+						""
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{API_KEY}}"
+						},
+						{
+							"key": "token",
+							"value": "{{API_TOKEN}}"
+						},
+						{
+							"key": "name",
+							"value": "HW9-POSTMAN"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteCard",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function(){\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time less than 400ms\", function(){\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(4000);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response should contain limits tag\", function(){\r",
+							"    pm.response.to.not.be.error;\r",
+							"    pm.response.to.have.jsonBody(\"limits\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"TEST\",\r\n    \"idBoard\": \"60f300ddb915db17bb2726b4\",\r\n    \"idList\": \"60f300ddb915db17bb2726b5\"\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASIC_URL}}/cards/{{cardId}}?key={{API_KEY}}&token={{API_TOKEN}}&name=HW9-POSTMAN",
+					"host": [
+						"{{BASIC_URL}}"
+					],
+					"path": [
+						"cards",
+						"{{cardId}}"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{API_KEY}}"
+						},
+						{
+							"key": "token",
+							"value": "{{API_TOKEN}}"
+						},
+						{
+							"key": "name",
+							"value": "HW9-POSTMAN"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCard",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 404\", function(){\r",
+							"    pm.response.to.have.status(404);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time less than 400ms\", function(){\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(4000);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response should have an error\", function(){\r",
+							"    pm.response.to.be.error;\r",
+							"});\r",
+							"\r",
+							"postman.setEnvironmentVariable(\"cardId\", \"\");"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"TEST\",\r\n    \"idBoard\": \"60f300ddb915db17bb2726b4\",\r\n    \"idList\": \"60f300ddb915db17bb2726b5\"\r\n    }\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASIC_URL}}/cards/{{cardId}}?key={{API_KEY}}&token={{API_TOKEN}}&name=HW9-POSTMAN",
+					"host": [
+						"{{BASIC_URL}}"
+					],
+					"path": [
+						"cards",
+						"{{cardId}}"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{API_KEY}}"
+						},
+						{
+							"key": "token",
+							"value": "{{API_TOKEN}}"
+						},
+						{
+							"key": "name",
+							"value": "HW9-POSTMAN"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "cardId",
+			"value": ""
+		}
+	]
+}
