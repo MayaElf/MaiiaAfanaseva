@@ -1,0 +1,61 @@
+{
+    "id": "60fab7502704620ea6d6f60f",
+    "checkItemStates": [],
+    "closed": false,
+    "dateLastActivity": "2021-07-23T12:34:24.111Z",
+    "desc": "",
+    "descData": null,
+    "dueReminder": null,
+    "idBoard": "60f300ddb915db17bb2726b4",
+    "idList": "60f300ddb915db17bb2726b5",
+    "idMembersVoted": [],
+    "idShort": 15,
+    "idAttachmentCover": null,
+    "idLabels": [],
+    "manualCoverAttachment": false,
+    "name": "TEST",
+    "pos": 81919,
+    "shortLink": "TJKYIRGT",
+    "isTemplate": false,
+    "cardRole": null,
+    "dueComplete": false,
+    "due": null,
+    "email": null,
+    "labels": [],
+    "shortUrl": "https://trello.com/c/TJKYIRGT",
+    "start": null,
+    "url": "https://trello.com/c/TJKYIRGT/15-test",
+    "idMembers": [],
+    "badges": {
+        "attachmentsByType": {
+            "trello": {
+                "board": 0,
+                "card": 0
+            }
+        },
+        "location": false,
+        "votes": 0,
+        "viewingMemberVoted": false,
+        "subscribed": false,
+        "fogbugz": "",
+        "checkItems": 0,
+        "checkItemsChecked": 0,
+        "checkItemsEarliestDue": null,
+        "comments": 0,
+        "attachments": 0,
+        "description": false,
+        "due": null,
+        "dueComplete": false,
+        "start": null
+    },
+    "subscribed": false,
+    "idChecklists": [],
+    "cover": {
+        "idAttachment": null,
+        "color": null,
+        "idUploadedBackground": null,
+        "size": "normal",
+        "brightness": "dark",
+        "idPlugin": null
+    }
+}
