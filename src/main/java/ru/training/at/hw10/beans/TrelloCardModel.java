@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName;
 import lombok.Data;
 
 @Data
-public class TrelloAnswer {
+public class TrelloCardModel {
 
     @SerializedName("id")
     @Expose
